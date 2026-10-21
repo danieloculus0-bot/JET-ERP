@@ -9,6 +9,25 @@ JERP is the enterprise resource planning layer of the **Axiom** software ecosyst
 
 The name **JERP** is the user-facing product identity; **JET-ERP** is the repository and technical project name.
 
+## Native Excel-compatible editing / JetPack workstations
+
+**[Published Axiom × BEAN enterprise vision](https://danieloculus0-bot.github.io/BEAN/axiom.html)** ·
+**[JetPack office deployment design and preflight](docs/JETPACK_NATIVE_OFFICE_DEPLOYMENT.md)**
+
+JERP should keep the computing load low. Prefer an **existing native
+Excel-compatible viewer/editor** (for example LibreOffice Calc on a supported
+Jetson distro) and a controlled Axiom file-revision/import workflow.
+There is no reason to ship a second spreadsheet engine or make Ollama a
+workstation requirement. Axiom holds the approved ERP record; the original
+workbook remains editable and retrievable.
+
+**Original Nano limitation:** Nvidia's final supported Nano JetPack release is
+4.6.6 on a legacy Ubuntu 18.04-derived environment. A newer Orin's ARM64
+package compatibility does *not* establish Nano compatibility. A
+read-only host inspection is available via
+`python3 infra/jetson/preflight.py --json`; successful hardware/editor
+testing remains required before declaring an installer functional.
+
 ## Product principles
 
 - **Local-first:** operate on an organization's own hardware and network, with deliberate backup and recovery.
