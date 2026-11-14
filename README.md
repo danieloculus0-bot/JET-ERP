@@ -1,3 +1,5 @@
+> **Lifecycle: successful architecture prototype archive, superseded (owner disposition, November 14, 2026).** The useful output of this repository is the JERP/Jetson enterprise deployment concept, initial domain model and integration contracts. That design-stage objective is considered complete for portfolio bookkeeping. Active ERP implementation and integration continue in [Axiom_Beta](https://github.com/danieloculus0-bot/Axiom_Beta); the existing JERP notes remain reusable references. **This repository is not a deployed ERP, a verified Jetson installation, or proof that Axiom has implemented every JERP concept.** Archive here means the documented project lifecycle, not GitHub's repository Archived flag.
+
 # JERP
 ### JET-ERP | An Axiom enterprise platform
 
